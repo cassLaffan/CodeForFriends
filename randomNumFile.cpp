@@ -8,7 +8,7 @@ using namespace std;
 //creates and returns a random character
 char randomChar(){
 
-  int randInt = rand() % 65 + 122;
+  int randInt = (rand() % 26) + 65;
   //change that allows for character conversion
   return (char)randInt;
 }
