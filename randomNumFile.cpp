@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
 
       int i = atoi(argv[2]);
 
-      for(int n = 0; n <= i; n++){
+      for(int n = 0; n < i; n++){
         testFile << randomChar() << " ";
       }
 
