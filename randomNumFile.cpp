@@ -15,10 +15,10 @@ char randomChar(){
 //arguments follow the following order: filename, number of characters
 int main(int argc, char *argv[]){
 
-  if(argc < 2){
+  if(argc < 3){
     std::cout << "Not enough arguments!" << std::endl;
   }
-  else if(argc > 2){
+  else if(argc > 3){
     std::cout << "Too many arguments!" << std::endl;
   }
 
@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
 
       int i = atoi(argv[2]);
 
-      for(int n = 0; n <= i; n++){
+      for(int n = 0; n < i; n++){
         testFile << randomChar() << " ";
       }
 
