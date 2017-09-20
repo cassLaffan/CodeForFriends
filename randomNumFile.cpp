@@ -8,9 +8,9 @@ using namespace std;
 //creates and returns a random character
 char randomChar(){
 
-  int randInt = rand() % 26;
-  //look at me cheat lmao
-  return "abcdefghijklmnopqrstuvwxyz"[randInt];
+  int randInt = rand() % 65 + 122;
+  //change that allows for character conversion
+  return (char)randInt;
 }
 //arguments follow the following order: filename, number of characters
 int main(int argc, char *argv[]){
