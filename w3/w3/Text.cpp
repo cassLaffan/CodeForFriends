@@ -40,7 +40,6 @@ namespace w3 {
 	}
 	Text::~Text() {
 		delete[] dataTable;
-		dataTable = nullptr;
 	}
 
 	Text::Text(const Text& rhs) {				//cpy constructor
