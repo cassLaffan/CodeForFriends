@@ -53,7 +53,9 @@ namespace w3 {
 			if (rhs.dataTable) {
 				count = rhs.count;
 				dataTable = new string[count];
-				memcpy(dataTable, rhs.dataTable, count * sizeof(string));
+				for(int i = 0; i < count; ++ i){
+					dataTable[i] = rhs.dataTable[i];
+				}
 			}
 		}
 		return *this;
